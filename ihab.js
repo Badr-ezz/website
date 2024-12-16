@@ -24,3 +24,13 @@ for (let i = 0; i < 19; i++) {
     console.log("hello" + i);  
 }
 
+
+function hello() {
+  console.log("hi anas");
+  
+}
+
+hello()
+
+    
+
