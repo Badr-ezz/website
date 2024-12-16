@@ -5,19 +5,7 @@ console.log("hello ihab");
 
 
 console.log("jjjjjjjjjjjj");
-console.log("jjjjjjjjjjjj");
-console.log("jjjjjjjjjjjj");
-console.log("jjjjjjjjjjjj");
-console.log("jjjjjjjjjjjj");
-console.log("jjjjjjjjjjjj");
-console.log("jjjjjjjjjjjj");
-console.log("jjjjjjjjjjjj");
-console.log("jjjjjjjjjjjj");
-console.log("jjjjjjjjjjjj");
-console.log("jjjjjjjjjjjj");
-console.log("jjjjjjjjjjjj");
-console.log("jjjjjjjjjjjj");
-console.log("jjjjjjjjjjjj");
+
 
 
 for (let i = 0; i < 19; i++) {
@@ -32,5 +20,10 @@ function hello() {
 
 hello()
 
-    
+   
+let a = 0 ;
+while (a = 0) {
+    console.log(a);
+    a=1;
+}
 
