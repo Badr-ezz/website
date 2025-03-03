@@ -1,19 +1,42 @@
 pipeline {
     agent any
     stages {
+
+      stage('Clone Repository') {
+            steps {
+                git branch: 'master', url: 'https://github.com/Badr-ezz/website.git'
+            }
+        }
+
+        stage('Verify Folder Structure') {
+            steps {
+                sh 'ls -R'  // Debug: List all files to confirm paths
+            }
+        }
+
+        
         stage('Build') {
             steps {
-                echo "Developpement"
+                echo "Building.."
+                sh '''
+                echo "doing build stuff.."
+                '''
             }
         }
         stage('Test') {
             steps {
-                echo "testing"
+                echo "Testing.."
+                sh '''
+                echo "doing test stuff.."
+                '''
             }
         }
-        stage('Deploy') {
+        stage('Deliver') {
             steps {
-                echo "Mise en production"
+                echo 'Deliver....'
+                sh '''
+                echo "doing delivery stuff.."
+                '''
             }
         }
     }
